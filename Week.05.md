@@ -1,7 +1,7 @@
 # 경상북도 시, 군을 대상으로 출생수 최댓값 구하는 프로그램
 ```py
 import pandas as pd
-'''
+
 #데이터 업로드
 
 file="d:\PM12.csv"
