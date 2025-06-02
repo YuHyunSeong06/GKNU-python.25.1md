@@ -65,3 +65,33 @@ while (i<=n):
     
 print(f"수령 예정 금액 : {FV:,.0f}원")
 ```
+### 원금 100만원 이자가 20% 복리일때 원금의 10배가 되는 년도
+```py
+PV=1000000
+FV=PV
+r=20
+y=0
+
+print(f"원금 : {FV:,.0f}, 이자 :{r}%")
+
+while (FV<=PV*10):
+    FV=FV+(FV*(r/100))
+    y+=1
+
+print(f"예상 저축 기간 {y}년")
+```
+### 두 주사위를 던져 합이 6이 되는 경우
+```py
+maxNum=6
+cnt=0
+a=1 # 첫번째 주사위
+while (a<=maxNum):
+    b=1 # 두번째 주사위
+    while (b<=maxNum):
+        if(a+b==6):
+            cnt+=1
+            break
+        b+=1
+    a+=1
+print(f"2개의 주사위 합이 6이 되는 경우의 수 : {cnt}개")
+```
