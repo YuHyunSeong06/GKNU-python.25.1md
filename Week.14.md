@@ -67,3 +67,106 @@ for i in range(1,101):
 arr=[10*i for i in range(11)]
 print(f"배열요소 10개:{arr}")
 ```
+# 터틀 그래픽 함수
+### 사각형 그리기
+```py
+from turtle import *
+
+s=Screen()
+s.setup(400,400)
+speed(3)
+pensize(5)
+shape("turtle")
+color("blue")
+
+penup()
+goto(-50,-50)
+pendown()
+
+# 사각형 그리기
+for i in range(4):
+    forward(100)
+    left(90)
+
+s.exitonclick()
+```
+
+### 오각형 그리기
+```py
+from turtle import *
+
+s=Screen()
+s.setup(400,400)
+speed(3)
+pensize(5)
+shape("turtle")
+color("blue")
+
+penup()
+goto(-50,-50)
+pendown()
+
+# 오각형 그리기
+for i in range(5):
+    forward(100) # 100 단위 앞으로 이동
+    left(72)     # 오른쪽으로 72도 회전 (360/5)
+s.exitonclick()  # 클릭 시에 창 닫기
+```
+
+### 원 그리기
+```py
+from turtle import *
+
+s=Screen()
+s.setup(400,400)
+speed(3)
+pensize(5)
+shape("turtle")
+color("blue")
+
+penup()
+goto(-50,-50)
+pendown()
+
+# 원 그리기
+circle(50)
+penup()
+forward(100)
+pendown()
+color("orange")
+circle(50)
+s.exitonclick()
+```
+
+### 오륜기 그리기
+```py
+from turtle import *
+
+s=Screen()
+s.setup(400,400)
+speed(3)
+pensize(5)
+shape("turtle")
+color("blue")
+
+penup()
+goto(-50,-50)
+pendown()
+
+# 각원의 펜 색상과 시작 위치를 설정합니다.
+colors = ['blue','black','red','yellow','green']
+positions = [(-110,0),(0,0),(110,0),(-55,-55),(55,-55)]
+
+for i in range(5):
+    pencolor(colors[i])
+    #fillcolor(colors[i])
+    penup()
+    goto(positions[i])
+    pendown()
+    #begin_fill()
+    circle(50)
+    #end_fill()
+
+hideturtle()
+s.exitonclick()
+```
