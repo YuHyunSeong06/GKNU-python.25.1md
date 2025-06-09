@@ -35,3 +35,13 @@ for i in range(2,10):
         print(f"{i} x {j} = {i*j:2}",end="   ")
     print()
 ```
+
+### 구구단 가로 출력 응용 - 열방향
+```py
+print(" "*50,"구구단 출력\n")
+
+for i in range(1,10):
+    for j in range(2,10):
+        print(f"{j} x {i} = {i*j:2}",end="   ")
+    print()
+```
