@@ -45,3 +45,25 @@ for i in range(1,10):
         print(f"{j} x {i} = {i*j:2}",end="   ")
     print()
 ```
+
+### 1부터 100까지 정수 중 3의 배수를 더하되 250을 넘는 순간 중지
+```py
+limits=250
+total=0
+times=0
+
+for i in range(1,101):
+    if(total<limits):
+        if(i%3==0):
+            total=total+i
+            times+=1
+       
+            
+            print(f"현재 값 : {i:>2}, 누적횟수 : {times:>2}, 합 : {total:>3} ")
+```
+
+### 10의 배수 10개를 원소로 갖는 배열 array를 만들고 출력
+```py
+arr=[10*i for i in range(11)]
+print(f"배열요소 10개:{arr}")
+```
