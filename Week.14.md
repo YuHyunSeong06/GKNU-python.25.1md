@@ -17,3 +17,21 @@ while(d_milk>=3):
 
 print("총",t_milk,"병의 우유를 마실 수 있다.")
 ```
+
+### 원하는 단만 출력
+```py
+i=int(input("출력할 구구단 입력 :"))
+
+for j in range (1,10):
+    print(f"{i}x{j}={i*j:2}")
+```
+
+### 구구단 가로 출력
+```py
+print(" "*50,"구구단 출력\n")
+
+for i in range(2,10):
+    for j in range(1,10):
+        print(f"{i} x {j} = {i*j:2}",end="   ")
+    print()
+```
