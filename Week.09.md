@@ -7,7 +7,7 @@ print(square(5))
 ```
 
 ### 함수를 통한 두 수의 합
-```
+```py
 def add(a,b):
     c=a+b
     return c
@@ -18,7 +18,7 @@ print("숫자 1과 숫자 2의 합을 구하는 함수의 결과 값: ",ret)
 ```
 
 ### 더하기 함수
-```
+```py
 def add(a,b):
     return a+b #토글형
 
@@ -30,7 +30,7 @@ print(add(['rock'],['paper','scissors'])) #자료형
 ```
 
 ### 구구단 함수 버전
-```
+```py
 def gugudan(n):
     for i in range(1,10):
         res = n*i
@@ -46,7 +46,7 @@ while True:
 
 # 2차시
 ### 약수 구하는 함수
-```
+```py
 def getDivisors(n):
     res=[]
     for i in range(1,n//2):
@@ -58,7 +58,7 @@ print(getDivisors(28))
 ```
 
 ### 함수를 사용한 크기 비교
-```
+```py
 def max_value(a,b):
     if a>b:
         print(a,"가 더 크다")
@@ -79,7 +79,7 @@ for i in range(5):
 
 # 3차시
 ### bmi지수 계산
-```
+```py
 def bmi(we,hi):
     bm=we/(hi*hi)
 
@@ -96,7 +96,7 @@ for i in range(3):
 ```
 
 ### 함수 리턴을 사용한 계산
-```
+```py
 def circle_area(r):
     area1=3.14*r*r
     return area1
@@ -118,7 +118,7 @@ for i in range(3):
 
 # 4차시
 ### 사칙연산
-```
+```py
 def plus(a,b):
     c=a+b
     print("더하기 결과: ",c)
